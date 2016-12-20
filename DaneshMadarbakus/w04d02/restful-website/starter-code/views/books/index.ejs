@@ -1,0 +1,16 @@
+<h1>All books</h1>
+<ul>
+  <% books.forEach(book => { %>
+    <li>
+    <ul>
+        <li><a href="/books/<%= book.id %>"><%= book.title %></li>
+        <li><a href="/books/<%= book.id %>/edit">Edit</a></li>
+        <li>
+        <form action="/books/<%= book.id %>" method="post">
+        <input type="hidded" name="_method" value="delete">
+        <button>Delete</button>
+        </li>
+    </ul>
+    </li>
+  <% }); %>
+</ul>
