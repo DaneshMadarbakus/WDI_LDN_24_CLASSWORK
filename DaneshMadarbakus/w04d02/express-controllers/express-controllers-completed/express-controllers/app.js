@@ -1,11 +1,11 @@
 const express        = require('express');
 const app            = express();
 const port           = process.env.PORT || 3000;
-const router         = require('./config/routes');
 const bodyParser     = require('body-parser');
 const morgan         = require('morgan');
 const methodOverride = require('method-override');
 const expressLayouts = require('express-ejs-layouts');
+const router         = require('./config/routes');
 
 // Use morgan for logging
 app.use(morgan('dev'));

@@ -5,7 +5,7 @@ function foodsIndex(req, res) {
 }
 
 function foodsNew(req, res) {
-  res.render('foods/new');
+  res.render('foods/,new');
 }
 
 function foodsCreate(req, res) {
