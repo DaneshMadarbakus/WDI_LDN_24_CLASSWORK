@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="leadFrog">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Controllers 2-way binding</title>
+    <!-- inject:js -->
+    <!-- endinject -->
+    <!-- inject:css -->
+    <!-- endinject -->
+  </head>
+  <body ng-controller="HomeCtrl as home">
+    {{ home.awesome }}
+    {{ home.numbers }}
+    <ul>
+      <li ng-repeat="noice in home.beds">{{ noice.name}}</li>
+    </ul>
+  </body>
+</html>

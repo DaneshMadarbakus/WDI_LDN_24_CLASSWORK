@@ -13,6 +13,6 @@ app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use('/api', routes); 
+app.use('/api', routes);
 
 app.listen(port, console.log(`Listening on port: ${port}`));

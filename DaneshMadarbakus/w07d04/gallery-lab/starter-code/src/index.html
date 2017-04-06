@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="galleryA">
+<head>
+  <meta charset="utf-8">
+  <title>Angular Stack Setup</title>
+  <!-- inject:js -->
+  <!-- endinject -->
+  <!-- inject:css -->
+  <!-- endinject -->
+</head>
+<body>
+  <h1>The Metropolitan Museum of Art</h1>
+
+<hr>
+  <div class="ex" ng-controller="CtrlTwo as exh">
+    <h2>Exhibit</h2>
+      <img ng-src="{{ exh.pic }}">
+      <p>{{exh.blahyh}}</p>
+      <p>{{exh.blahna}}</p>
+  </div>
+<hr>
+  <div class="gi" ng-controller="CtrlOne as gallery">
+    <h2>General Info:</h2>
+    <h3>Hours</h3>
+    <ul>
+      <li ng-repeat="hours in gallery.hours"><strong>{{ hours.day }}</strong>:{{ hours.name }}</li>
+    </ul>
+    <h3>Suggested Admission</h3>
+    <ul>
+      <li ng-repeat="admissions in gallery.admissions">{{ admissions.name }}</li>
+    </ul>
+  </div>
+<hr>
+<div class="di" ng-controller="CtrlThree as dinfo">
+  <h2>Donor Information</h2>
+  <h3>Contact</h3>
+    <p>{{ dinfo.email }} . {{ dinfo.number }}</p>
+  <h3>Donation Amounts:</h3>
+  <ul>
+    <li ng-repeat="donation in dinfo.dmamounts">{{donation.price}}</li>
+  </ul>
+
+</div>
+
+</body>
+</html>

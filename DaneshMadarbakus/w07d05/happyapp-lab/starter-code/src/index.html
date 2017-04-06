@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="happyApp">
+<head>
+  <meta charset="utf-8">
+  <title>Happy App</title>
+  <!-- inject:js -->
+  <!-- endinject -->
+  <!-- inject:css -->
+  <!-- endinject -->
+</head>
+<body>
+  <h1>HAPPYAPP</h1>
+  <h2>Generally average happiness over time since 1986</h2>
+  <div class="container">
+    <div class="happy-score">
+      <ol>
+      <li ng-repeat="">
+        <p>{{  }}</p>
+        <button ng-click="todos.done(item)">X</button>
+      </li>
+    </ol>
+    </div>
+    <div class="happy-form">
+      <h3>How's your happiness today?</h3>
+      <h4>Click one to pick it, then save.</h4>
+      <input type="radio" name="happiness" value="1" checked> :-)
+      <input type="radio" name="happiness" value="2"> :-(
+      <input type="radio" name="happiness" value="3"> :-| <br>
+      <input type="submit" value="Save my happiness">
+    </div>
+  </div>
+
+</body>
+</html>
