@@ -1,0 +1,10 @@
+<form ng-submit="postsUpdate.edit()">
+  <div>
+    <label>Body</label>
+    <textarea ng-model="postsUpdate.post.body">{{postsUpdate.post.body}}</textarea>
+  </div>
+  <div>
+    <p>{{ postsUpdate.post.user.fullname }}</p>
+  </div>
+  <button>Submit</button>
+</form>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="twitter">
+  <head>
+    <base href="/">
+    <meta charset="utf-8">
+    <title>Angular Stack Setup</title>
+    <!-- inject:js -->
+    <!-- endinject -->
+    <!-- inject:css -->
+    <!-- endinject -->
+  </head>
+  <body ng-controller="PostsIndexCtrl as postsIndex">
+    <ul>
+      <li ng-repeat="post in postsIndex.all">
+        {{ post }}
+      </li>
+    </ul>
+  </body>
+</html>
